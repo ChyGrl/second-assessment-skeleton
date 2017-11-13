@@ -26,7 +26,9 @@ This tells us that the endpoint captures the path segment following `breeds/` wi
 Remember that the curly braces themselves are not part of the url, but anything outside of them is.
 
 #### Trailing Slashes
-The endpoint specifications never supply a trailing slash, but they are allowed. It is up to you to decide whether you prefer trailing slashes for API endpoint URLs or not, but whichever you choose, be consistent from endpoint to endpoint.
+The endpoint specifications never supply a trailing slash, and they are NOT allowed. In order to adhere to the
+strict guidelines of this assessment and ensure automated tests run correctly, please do not include
+trailing slashes in your endpoints.
 
 ### Types and Object Properties
 The syntax used to describe the request and response bodies for each required api endpoint is a variation of javascript's object literal syntax, in order to promote legibility, but the endpoints themselves should use JSON to represent data.
